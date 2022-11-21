@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Delivery & Address</title>
+  </head>
+  <body>
+    <div class="main"></div>
+      <div id="form-container">
+        <form action="/" id="form">
+          <h1>Delivery & Address</h1>
+
+          <div class="input-controls">
+            <label for="name">Name</label>
+            <input placeholder="Enter Your Name" type="text" id="name" />
+            <div class="error"></div>
+          </div>
+
+          <div class="input-controls">
+            <label for="surname">Surname</label>
+            <input placeholder="Enter Your Surname" type="text" id="surname" />
+            <div class="error"></div>
+          </div>
+
+          <div class="input-controls">
+            <label for="date1">Delivery Date</label>
+            <input required type="date" id="date1" />
+            <div class="error"></div>
+          </div>
+
+          <h2>Address</h2>
+
+          <div class="input-controls">
+            <label for="street">Street</label>
+            <input placeholder="Enter Street Name" type="text" id="street" />
+            <div class="error"></div>
+          </div>
+
+          <div class="input-controls">
+            <label for="house">House Number</label>
+            <input type="number" placeholder="Enter House Number" id="house" />
+            <div class="error"></div>
+          </div>
+
+          <div class="input-controls">
+            <label for="flat">Flat Number</label>
+            <input type="number" placeholder="Enter Flat Number" id="flat" />
+            <div class="error"></div>
+          </div>
+
+          <div class="row">
+            <div class="input-controls-radio">
+              <h2>Payment Type</h2>
+              <div class="radio-item">
+                <label for="cash">Cash</label>
+                <input value="Cash" name="method" type="radio" id="cash" />
+                <label for="card">Card</label>
+                <input checked  value="Card" name="method" id="card" type="radio" />
+              </div>
+              <div class="error"></div>
+            </div>
+
+            <div class="checkbox-conatainer">
+              <h2>Choose 2 gifts</h2>
+              <div class="checkbox-item">
+                <input id="gift" value="pack as a gift" class="checks" type="checkbox" />
+                <label for="gift">pack as a gift</label>
+              </div>
+              <div class="checkbox-item">
+                <input id="postcard" value="add postcard" class="checks" type="checkbox" />
+                <label for="postcard">add postcard</label>
+              </div>
+              <div class="checkbox-item">
+                <input id="discount" value="provide 2% discount" class="checks" type="checkbox" />
+                <label for="discount">provide 2% discount </label>
+              </div>
+              <div class="checkbox-item">
+                <input id="pen" class="checks" value="branded pen or pencil" type="checkbox" />
+                <label for="pen">branded pen or pencil</label>
+              </div>
+            </div>
+          </div>
+          <div class="submit-form-container">
+            <input disabled id="submit-btn" type="submit" value="Complete" />
+          </div>
+        </form>
+      </div>
+
+    <div class="popup-div" id="popup-div">
+      <h1>Address Summary</h1>
+      <div class="info-container">
+        <div class="info-item">
+          <h3>Full Name:</h3>
+          <span class="name"></span>
+        </div>
+        <div class="info-item">
+          <h3>Delivery Date:</h3>
+          <span class="date"></span>
+        </div>
+        <div class="info-item">
+          <h3>Address:</h3>
+          <span class="address"></span>
+        </div>
+        <div class="info-item">
+          <h3>Payment Method:</h3>
+          <span class="payment"></span>
+        </div>
+        <div class="info-item">
+          <h3>Gifts:</h3>
+          <span class="gift">hekerer</span>
+        </div>
+      </div>
+      <div onClick="hideSummary()" class="controls">
+        <i class="bx bx-window-close close-btn"></i>
+      </div>
+    </div>
+    <script src="./form.js"></script>
+  </body>
+</html>
