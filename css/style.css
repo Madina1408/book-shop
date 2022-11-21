@@ -1,0 +1,299 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+  list-style: none;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+header {
+  margin-top: 1rem;
+}
+header nav {
+  margin: auto;
+  width: 81%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 1%;
+}
+header nav .logo {
+  display: flex;
+  align-items: center;
+  gap: 5%;
+}
+header nav .logo .book {
+  font-size: xx-large;
+  color: rgb(164, 75, 12);
+  opacity: 0.8;
+}
+header nav .logo h1 {
+  color: chocolate;
+  width: 10rem;
+  font-size: medium;
+}
+header nav ul {
+  display: flex;
+  gap: 10%;
+  width: 35%;
+}
+header nav ul li a {
+  color: chocolate;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+header nav ul li a .icon, header nav ul li a p {
+  font-size: large;
+  font-weight: 500;
+}
+header nav ul li a:hover {
+  opacity: 0.7;
+  transition: all 0.075s ease-in-out;
+}
+
+#advert {
+  width: 80%;
+  height: 50rem;
+  margin: auto;
+  margin-top: 1rem;
+  background-image: url("../assets/mainpic.jpg");
+  object-fit: cover;
+}
+#advert .container {
+  width: 100%;
+  padding-top: 15%;
+}
+#advert .container .advert-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-left: 55%;
+  width: 35%;
+  padding: 3rem;
+  background: white;
+}
+#advert .container .advert-content h2 {
+  font-size: large;
+  font-weight: 500;
+}
+#advert .container .advert-content h3 {
+  font-size: x-large;
+  font-weight: bolder;
+  line-height: 150%;
+  letter-spacing: 1px;
+}
+#advert .container .advert-content p {
+  font-size: small;
+  font-weight: bold;
+  letter-spacing: 0.7px;
+}
+
+#main-container {
+  width: 80%;
+  margin: auto;
+  margin-top: 4rem;
+}
+#main-container h2 {
+  font-size: large;
+}
+#main-container .popup {
+  position: absolute;
+  z-index: 9;
+}
+#main-container .popup .popup-content {
+  background: white;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0.5rem;
+  box-shadow: 2px 2px 8px 8px rgba(225, 181, 114, 0.74);
+  border-radius: 6px;
+}
+#main-container .popup .popup-content h6 {
+  font-size: medium;
+  font-weight: 500;
+  color: chocolate;
+}
+#main-container .popup .popup-content p {
+  font-size: small;
+  text-align: center;
+}
+#main-container .popup .popup-content .close-btn {
+  font-size: x-large;
+  color: chocolate;
+}
+#main-container #container {
+  margin-top: 3rem !important;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+  justify-content: space-between;
+}
+#main-container #container .inner-container {
+  position: relative;
+  width: 17rem;
+  border-radius: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 8px 3px rgba(225, 181, 114, 0.74);
+}
+#main-container #container .inner-container img {
+  width: 14rem;
+  height: 17.5rem;
+  padding-top: 0.5rem;
+}
+#main-container #container .inner-container .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+#main-container #container .inner-container .content h4 {
+  font-size: medium;
+  font-weight: normal;
+  text-align: center;
+}
+#main-container #container .inner-container .content h5 {
+  width: 95%;
+  text-align: center;
+  font-size: small;
+  font-weight: 500;
+  font-style: italic;
+}
+#main-container #container .inner-container .content .price-div {
+  display: flex;
+  gap: 2rem;
+}
+#main-container #container .inner-container .content .price-div h6 {
+  font-size: medium;
+}
+#main-container #container .inner-container .content .price-div .popup-button {
+  border: none;
+  color: chocolate;
+  background-color: white;
+  font-size: small;
+  font-style: italic;
+  text-decoration: underline;
+  cursor: pointer;
+}
+#main-container #container .inner-container .content .price-div .popup-button:hover {
+  opacity: 0.6;
+}
+#main-container #container .inner-container .content .btn {
+  cursor: pointer;
+  height: 3.6rem;
+  width: 12rem;
+  background: chocolate;
+  outline: none;
+  border: none;
+  border-radius: 2px;
+  color: rgb(30, 21, 21);
+  font-size: small;
+  font-weight: 500;
+}
+#main-container #container .inner-container .content .btn:hover {
+  opacity: 0.9;
+}
+#main-container #see-more {
+  text-align: center;
+  margin-top: 4rem;
+}
+#main-container #see-more a {
+  color: chocolate;
+  opacity: 0.6;
+}
+#main-container #see-more a h4 {
+  font-size: large;
+}
+#main-container #see-more a .arrow {
+  font-size: x-large;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+footer {
+  margin-top: 5rem;
+}
+footer .container {
+  width: 80%;
+  background-color: rgb(250, 243, 231);
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+}
+footer .container .newsletter {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+footer .container .newsletter h4 {
+  font-size: large;
+}
+footer .container .newsletter .order {
+  display: flex;
+  gap: 0.7px;
+  align-items: center;
+}
+footer .container .newsletter .order input[type=email] {
+  padding: 1rem;
+  width: 18rem;
+}
+footer .container .newsletter .order button {
+  cursor: pointer;
+  height: 3.6rem;
+  width: 6rem;
+  background: chocolate;
+  outline: none;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  font-size: 16px;
+}
+footer .container .newsletter .order button:hover {
+  opacity: 0.9;
+}
+footer .container .sub-container {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+footer .container .sub-container .cards, footer .container .sub-container .socials {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+footer .container .sub-container .cards img:hover, footer .container .sub-container .socials img:hover {
+  transform: scale(1.1);
+  transition: all 0.75ms ease-in-out;
+}
+footer .container .sub-container .cards img {
+  width: 4rem;
+}
+footer .container .sub-container .socials img {
+  width: 2.5rem;
+}
+
+/*# sourceMappingURL=style.css.map */

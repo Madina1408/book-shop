@@ -1,0 +1,71 @@
+footer{
+  margin-top: 5rem;
+  .container{
+    width: 80%;
+    background-color: rgb(250, 243, 231);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+    .newsletter{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 2rem;
+      gap: 1rem;
+      h4{
+        font-size: large;
+      }
+      .order{
+        display: flex;
+        gap: 0.7px;
+        align-items: center;
+        input[type='email']{
+          padding: 1rem;
+          width: 18rem;
+        }
+        button{
+          cursor: pointer;
+          height: 3.6rem;
+          width: 6rem;
+          background: chocolate;
+          outline: none;
+          border: none;
+          border-radius: 2px;
+          color: white;
+          font-size: 16px;
+          &:hover{
+            opacity: 0.9 ;
+          }
+        }
+      }
+    }
+    .sub-container{
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+      .cards, .socials{
+        display: flex;
+        gap: 2rem;
+        margin-bottom: 2rem;
+        img{
+          &:hover{
+            transform: scale(1.1);
+            transition: all 0.75ms ease-in-out;
+          }
+        }
+      }
+      .cards{
+        img{
+          width: 4rem;
+        }
+      }
+      .socials{
+        img{
+          width: 2.5rem;
+        }
+      }
+    }
+  }
+}

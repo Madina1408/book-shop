@@ -1,0 +1,36 @@
+#advert{
+  width: 80%;
+  height: 50rem;
+  margin: auto;
+  margin-top: 1rem;
+  background-image: url('../assets/mainpic.jpg');
+  object-fit: cover;
+  .container{
+    width: 100%;
+    padding-top: 15%;
+    .advert-content{
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      margin-left: 55%;
+      width: 35%;
+      padding: 3rem;
+      background: white;
+      h2{
+        font-size: large;
+        font-weight: 500;
+      }
+      h3{
+        font-size: x-large;
+        font-weight: bolder;
+        line-height: 150%;
+        letter-spacing: 1px;
+      }
+      p{
+        font-size: small;
+        font-weight: bold ;
+        letter-spacing: 0.7px;
+      }
+    }
+  }
+}
