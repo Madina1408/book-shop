@@ -260,7 +260,9 @@ function changeNumberOfUnits(action, id){
     if(item.id==id){
       if(action==='minus' && numberOfUnits>1){
         numberOfUnits--;
-      }else if (action==='plus' && numberOfUnits<item.stock){
+      }else if (action==='plus'
+      // && numberOfUnits<item.stock
+      ){
         numberOfUnits++;
       }
     }
